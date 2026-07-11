@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #1C3B2B;
+  --color-primary-green-hover: #13291E;
+  --color-earth-brown: #7A8F4C;
+  --color-earth-brown-hover: #62733D;
+  --color-golden-yellow: #CFA050;
+  --color-golden-yellow-hover: #B28941;
+  --color-off-white: #F2E6D8;
+  --color-dark-gray: #333333;
+  --color-text-muted: #555555;
+  
+  --color-forest: #1C3B2B;
+  --color-earth: #7A8F4C;
+  --color-gold: #CFA050;
+
+  --font-sans: "Helvetica Neue", Helvetica, Arial, "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  .border-soft {
+    border: 1px solid rgba(141, 110, 99, 0.1);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-off-white);
+    color: var(--color-dark-gray);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar for an elegant feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2E6D8;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C4AF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8D6E63;
+}
+
+/* Animations and Utilities */
+.text-stroke {
+  -webkit-text-stroke: 1px var(--color-primary-green);
+  color: transparent;
+}
+
+/* Hide scrollbars for cleaner mobile horizontal scrolling strips */
+#mobile-quick-nav::-webkit-scrollbar {
+  display: none;
+}
+

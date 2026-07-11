@@ -1,0 +1,6 @@
+{
+  "name": "Vana Ayu Naturals",
+  "description": "Pure Botanicals. Real Results. A beautiful organic portfolio showcasing natural botanical powders, premium nuts, and traditional ayurvedic wellness formulations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
